@@ -1,5 +1,4 @@
-﻿#!groovy​
-pipeline {
+﻿pipeline {
     agent { node { label 'WindowsNode'}}
 
     options {
