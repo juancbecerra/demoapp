@@ -11,6 +11,11 @@
     }
 
      stages {
+		 stage('Checkout')
+		 {
+			checkout([$class: 'GitSCM', branches: [[name: '*/dev']],
+    userRemoteConfigs: [[url: 'https://github.com/juancbecerra/demoapp.git']]])
+		 }
         stage('Build')
         {
             steps {
