@@ -32,5 +32,13 @@ namespace DemoApp.NUnit
             var actualResult = DemoApp.Library.Subtract(20, 5);
             Assert.AreEqual(expectedResult, actualResult);
         }
+
+        [Test]
+        public void TestDivision()
+        {
+            var expectedResult = 10;
+            var actualResult = DemoApp.Library.Divide(100, 10);
+            Assert.AreEqual(expectedResult, actualResult);
+        }
     }
 }
