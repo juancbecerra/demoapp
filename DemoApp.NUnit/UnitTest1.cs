@@ -24,5 +24,13 @@ namespace DemoApp.NUnit
             var actualResult = DemoApp.Library.Multiply(5, 3);
             Assert.AreEqual(expectedResult, actualResult);
         }
+
+        [Test]
+        public void TestSubtract()
+        {
+            var expectedResult = 15;
+            var actualResult = DemoApp.Library.Subtract(20, 5);
+            Assert.AreEqual(expectedResult, actualResult);
+        }
     }
 }
