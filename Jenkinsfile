@@ -1,5 +1,5 @@
 ﻿pipeline {
-    agent { node { label 'WindowsNode'}}
+    agent { node any }
 
     options {
         buildDiscarder(logRotator(numToKeepStr: '10'))
